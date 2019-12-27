@@ -1,0 +1,235 @@
+html,
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  padding: 0;
+  margin: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset,
+img {
+  border: 0; }
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-weight: normal;
+  font-style: normal; }
+
+ol,
+ul {
+  list-style: none; }
+
+caption,
+th {
+  text-align: left; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: 100%; }
+
+q:before,
+q:after {
+  content: ""; }
+
+abbr,
+acronym {
+  border: 0; }
+
+body {
+  background-color: #afeeee; }
+
+.clock {
+  position: absolute;
+  box-sizing: border-box;
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  border: 10px solid;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-animation: change-background 7s ease infinite alternate;
+          animation: change-background 7s ease infinite alternate; }
+  .clock__top {
+    position: absolute;
+    width: 3px;
+    height: 8px;
+    background: #262626;
+    left: 0;
+    right: 0;
+    margin: 0 auto; }
+  .clock__right {
+    position: absolute;
+    width: 8px;
+    height: 3px;
+    background: #262626;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto 0; }
+  .clock__bottom {
+    position: absolute;
+    width: 3px;
+    height: 8px;
+    background: #262626;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto; }
+  .clock__left {
+    position: absolute;
+    width: 8px;
+    height: 3px;
+    background: #262626;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto 0; }
+  .clock__center {
+    position: absolute;
+    height: 6px;
+    width: 6px;
+    background: #262626;
+    border-radius: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto; }
+  .clock__hour {
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    -webkit-animation: time 60s infinite linear;
+            animation: time 60s infinite linear; }
+    .clock__hour:before {
+      content: "";
+      position: absolute;
+      height: 20px;
+      width: 3px;
+      top: 67px;
+      background: #262626; }
+  .clock__minute {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    -webkit-animation: time 30s infinite linear;
+            animation: time 30s infinite linear; }
+    .clock__minute:before {
+      content: "";
+      position: absolute;
+      background: #262626;
+      height: 40px;
+      width: 1px;
+      top: 50px; }
+  .clock__second {
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    -webkit-animation: time 15s infinite linear;
+            animation: time 15s infinite linear; }
+    .clock__second:before {
+      content: "";
+      position: absolute;
+      background: #fd1111;
+      height: 60px;
+      width: 2px;
+      top: 30px; }
+
+@-webkit-keyframes time {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes time {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@-webkit-keyframes change-background {
+  0% {
+    background: #afeeee;
+    border-color: #00ced1; }
+  25% {
+    background: #7fffd4;
+    border-color: #48d1cc; }
+  50% {
+    background: #40e0d0;
+    border-color: #40e0d0; }
+  75% {
+    background: #48d1cc;
+    border-color: #7fffd4; }
+  100% {
+    background: #00ced1;
+    border-color: #afeeee; } }
+
+@keyframes change-background {
+  0% {
+    background: #afeeee;
+    border-color: #00ced1; }
+  25% {
+    background: #7fffd4;
+    border-color: #48d1cc; }
+  50% {
+    background: #40e0d0;
+    border-color: #40e0d0; }
+  75% {
+    background: #48d1cc;
+    border-color: #7fffd4; }
+  100% {
+    background: #00ced1;
+    border-color: #afeeee; } }
+
+/*# sourceMappingURL=main.css.map */
